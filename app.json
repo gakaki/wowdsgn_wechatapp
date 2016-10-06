@@ -1,12 +1,63 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+      "page/home/home",
+      "page/home/home"
+     
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "尖叫设计",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe"
+  },
+  "tabBar": {
+    "color": "#EFEFEF",
+    "selectedColor": "#FFE384",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+    {
+      "pagePath":       "page/home/home",
+      "iconPath":         "images/tab/home.png",
+      "selectedIconPath":  "images/tab/home-active.png",
+      "text": "首页"
+    }, 
+
+    {
+      "pagePath":       "page/home/home",
+      "iconPath":         "images/tab/store.png",
+      "selectedIconPath":  "images/tab/store-active.png",
+      "text": "购物"
+    },
+
+    {
+      "pagePath":       "page/home/home",
+      "iconPath":         "images/tab/hot.png",
+      "selectedIconPath":  "images/tab/hot-active.png",
+      "text": "精选"
+    },
+
+    {
+      "pagePath":       "page/home/home",
+      "iconPath":         "images/tab/like.png",
+      "selectedIconPath":  "images/tab/like-active.png",
+      "text": "喜欢"
+    },
+
+    {
+      "pagePath":       "page/home/home",
+      "iconPath":         "images/tab/me.png",
+      "selectedIconPath":  "images/tab/me-active.png",
+      "text": "我"
+    }
+    
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }

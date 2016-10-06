@@ -1,6 +1,10 @@
 <!--index.wxml-->
 <view class="container">
+
+        <image style="width: 200px; height: 200px; background-color: #eeeeee;"  src="http://7xscia.com1.z0.glb.clouddn.com/test_003.gif?imageMogr2/format/webp"></image>
+
   <view  bindtap="onButtonTap" class="userinfo">
+
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
