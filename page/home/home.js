@@ -1,13 +1,11 @@
-
-var app = getApp()
+var app     = getApp()
+var Api     = require('../../utils/api.js');
+var util    = require('../../utils/util.js');
 
 Page({
 
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-
-
+    data:[]
 
   },
   myFun(){
@@ -15,24 +13,17 @@ Page({
   },
   onLoad: function () {
 
-    var url = app.url("v1/page?channel=2&paramJson={\"region\":1,\"pageId\":1}")
-    console.log(url)
     console.log(this.myFun())
 
-    wx.request({
-        url: url,
-        data: {
-
-        },
-        header:{
-            "Content-Type":"application/json"
-        },
-        success: function(res) {
-            var data = res.data;
-            console.log(data)
-        }
+    Api.home( res => {
+      console.log(res)
+      //更新数据
+      this.setData({
+          data:res.modules
+      });
     });
-    
+
+
   },
 
 

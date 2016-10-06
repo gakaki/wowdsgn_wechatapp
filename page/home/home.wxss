@@ -19,3 +19,11 @@
 .usermotto {
   margin-top: 200px;
 }
+.pic_img{
+    width: 100rpx;
+    height: 0rpx;
+    background-color: #eeeeee;
+}
+
+
+

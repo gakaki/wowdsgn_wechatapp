@@ -1,6 +1,22 @@
-<!--index.wxml-->
-<view class="container">
- 
-          <image style="width: 200px; height: 200px; background-color: #eeeeee;"  src="http://7xscia.com1.z0.glb.clouddn.com/test_003.gif?imageMogr2/format/webp"></image>
+<!--home.wxml-->
+<view class="topics-main">
+
+  <image class="pic_img" src="http://7xscia.com1.z0.glb.clouddn.com/test_003.gif?imageMogr2/format/webp"></image>
+
+  <scroll-view class="posts-list" style="height:100%" scroll-y="true" bindscrolltolower="lower">
+    <block wx:for="{{data}}">
+        <block wx:for="{{item.moduleContent.banners}}">
+            <view class="author">
+              <image class="author-avatar" src="{{item.bannerImgSrc}}"></image>
+              <view class="author-name">{{item.bannerLinkType}}</view>
+            </view>
+        </block>
+    </block>
+  </scroll-view>
+
+  <loading hidden="{{hidden}}">
+    加载中...
+  </loading>
+
 
 </view>
