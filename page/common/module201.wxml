@@ -1,0 +1,8 @@
+<!-- module201.wxml -->
+<template name="module201">
+    <view class="module201">
+          <image src="{{data.bannerImgSrc}}"/>
+    </view>
+</template>
+
+

@@ -1,0 +1,8 @@
+<!-- module601.wxml -->
+<template name="module601">
+    <view class="module601">
+        601
+    </view>
+</template>
+
+

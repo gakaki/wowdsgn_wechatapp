@@ -1,16 +1,19 @@
 <!--home.wxml-->
+<import src="../common/module101.wxml" />
+<import src="../common/module201.wxml" />
+<import src="../common/module601.wxml" />
+
 <view class="topics-main">
 
   <image class="pic_img" src="http://7xscia.com1.z0.glb.clouddn.com/test_003.gif?imageMogr2/format/webp"></image>
 
   <scroll-view class="posts-list" style="height:100%" scroll-y="true" bindscrolltolower="lower">
     <block wx:for="{{data}}">
-        <block wx:for="{{item.moduleContent.banners}}">
-            <view class="author">
-              <image class="author-avatar" src="{{item.bannerImgSrc}}"></image>
-              <view class="author-name">{{item.bannerLinkType}}</view>
-            </view>
-        </block>
+    {{ 'module' + item.moduleType }}
+
+        <template is="{{ 'module' + item.moduleType }}" data="{{data:item.moduleContent}}"/>
+
+
     </block>
   </scroll-view>
 
