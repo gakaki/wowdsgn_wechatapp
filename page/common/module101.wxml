@@ -1,6 +1,6 @@
 <!-- module101.wxml -->
 <template name="module101">
-    <view class="module101">
+    <view class="module101" bindtap="bindViewTap" >
       <block wx:for="{{data.banners}}">
           <image src="{{item.bannerImgSrc}}"></image>
       </block>

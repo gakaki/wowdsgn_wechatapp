@@ -3,11 +3,13 @@
 <import src="../common/module201.wxml" />
 <import src="../common/module601.wxml" />
 
+
 <view class="topics-main">
+
 
   <image class="pic_img" src="http://7xscia.com1.z0.glb.clouddn.com/test_003.gif?imageMogr2/format/webp"></image>
 
-  <scroll-view class="posts-list" style="height:100%" scroll-y="true" bindscrolltolower="lower">
+  <scroll-view class="posts-list" style="height:100%" scroll-y="true" bindscrolltolower="lower" >
     <block wx:for="{{data}}">
     {{ 'module' + item.moduleType }}
 
