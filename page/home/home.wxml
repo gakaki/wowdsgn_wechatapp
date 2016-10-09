@@ -9,13 +9,15 @@
 
   <image class="pic_img" src="http://7xscia.com1.z0.glb.clouddn.com/test_003.gif?imageMogr2/format/webp"></image>
 
+<<<<<<< 66c9ecf071a9e2cf1f2c1c2ec060f5aa58e1ac2f
   <scroll-view class="posts-list" style="height:100%" scroll-y="true" bindscrolltolower="lower" >
+=======
+  <scroll-view scroll-y="true" bindscrolltolower="lower">
+>>>>>>> clean it
     <block wx:for="{{data}}">
-    {{ 'module' + item.moduleType }}
-
+      {{ 'module' + item.moduleType }}
         <template is="{{ 'module' + item.moduleType }}" data="{{data:item.moduleContent}}"/>
-
-
+        
     </block>
   </scroll-view>
 
