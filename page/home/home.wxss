@@ -8,16 +8,12 @@
 }
 
 /**module201.wxss**/
-.module201{
- 
 
-}
 .module201 {
-    max-width: 100%;
     border:1px solid green;
 }
 .module201 image{
-    width:100%;
-    
+    width:1175rpx;
+
 }
 
