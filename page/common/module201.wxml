@@ -1,7 +1,8 @@
 <!-- module201.wxml -->
 <template name="module201">
     <view class="module201">
-          <image src="{{data.bannerImgSrc}}"  mode="aspectFit"/>
+          <image src="{{data.bannerImgSrc}}?imageView/2/w/414/format/webp" mode="top left" style="height:694rpx;"/>
     </view>
 </template>
 
+    

@@ -24,7 +24,7 @@
     }, 
 
     {
-      "pagePath":       "page/home/home",
+      "pagePath":       "page/shop/index",
       "iconPath":         "images/tab/store.png",
       "selectedIconPath":  "images/tab/store-active.png",
       "text": "购物"

@@ -1,7 +1,7 @@
 'use strict';
 
 // var HOST_URI            = 'http://api.c.wowdsgn.com:10999/v1/';
-var HOST_URI            = 'https://mobile-api.wowdsgn.com/v1/';
+var HOST_URI            = 'https://wxapp.wowdsgn.com/v1/';
 
 function obj2uri (obj) {
     return Object.keys(obj).map(function (k) {

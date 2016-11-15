@@ -27,6 +27,19 @@ Page({
       hidden:false
     });
     console.log(this.myFun())
+    
+    wx.getSystemInfo({
+      success: function(res) {
+        console.log(res.model)
+        console.log(res.pixelRatio)
+        console.log(res.windowWidth)
+        console.log(res.windowHeight)
+        console.log(res.language)
+        console.log(res.version)
+      }
+    })
+        
+
 
     Api.home( res => {
       console.log(res)
